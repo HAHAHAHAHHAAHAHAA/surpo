@@ -11,5 +11,11 @@ namespace surpo2
             string userInput = Console.ReadLine();
             Console.WriteLine(userInput);
         }
+
+        
+        public void SayHi()
+        {
+            Console.WriteLine("Hi!!! ^_^");
+        }
     }
 }
