@@ -6,9 +6,20 @@ namespace surpo2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите какую-нибудь фразу:");
+            Console.WriteLine("Введите Hi или Bye:");
             string userInput = Console.ReadLine();
+
             Console.WriteLine(userInput);
+
+            if(userInput == "Bye")
+            {
+                SayBye();
+            }
+        }
+
+        public static void SayBye()
+        {
+            Console.WriteLine("Bye!!! -_-");
         }
     }
 }
