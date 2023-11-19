@@ -31,5 +31,10 @@ namespace surpo2
         {
             Console.WriteLine("Hi!!! ^_^");
         }
+
+        public static void Work()
+        {
+            Console.WriteLine("I'm working");
+        }
     }
 }
