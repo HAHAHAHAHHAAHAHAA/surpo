@@ -10,19 +10,14 @@ namespace surpo2
             string userInput = Console.ReadLine();
 
             Console.WriteLine(userInput);
-            int i = 100;
 
             if(userInput == "Bye")
             {
                 SayBye();
-                i++;
-                Console.WriteLine(i);
             }
             else if(userInput == "Hi")
             {
                 SayHi();
-                i--;
-                Console.WriteLine(i);
             }
         }
 
