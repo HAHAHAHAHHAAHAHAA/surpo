@@ -8,16 +8,22 @@ namespace surpo2
         {
             Console.WriteLine("Введите Hi или Bye:");
             string userInput = Console.ReadLine();
+            int i = 100;
 
             Console.WriteLine(userInput);
 
             if(userInput == "Bye")
             {
                 SayBye();
+                i++;
+                Console.WriteLine(i);
             }
             else if(userInput == "Hi")
             {
                 SayHi();
+                i--;
+                Console.WriteLine(i);
+
             }
         }
 
