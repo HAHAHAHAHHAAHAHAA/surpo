@@ -42,5 +42,10 @@ namespace surpo2
             Console.WriteLine("I'm working >_<");
         }
 
+        public static void Sleep()
+        {
+            Console.WriteLine("Going to sleep");
+        }
+
     }
 }
