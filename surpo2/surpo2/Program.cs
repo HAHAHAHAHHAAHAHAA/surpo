@@ -13,7 +13,7 @@ namespace surpo2
         }
 
         
-        public void SayHi()
+        public static void SayHi()
         {
             Console.WriteLine("Hi!!! ^_^");
         }
