@@ -25,6 +25,11 @@ namespace surpo2
                 Console.WriteLine(i);
 
             }
+            else
+            {
+                Work();
+            }
+
         }
 
         public static void SayBye()
