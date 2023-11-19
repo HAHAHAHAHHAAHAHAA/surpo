@@ -19,6 +19,11 @@ namespace surpo2
             {
                 SayHi();
             }
+            else
+            {
+                Work();
+            }
+
         }
 
         public static void SayBye()
