@@ -15,6 +15,10 @@ namespace surpo2
             {
                 SayBye();
             }
+            else if(userInput == "Hi")
+            {
+                SayHi();
+            }
         }
 
         public static void SayBye()
