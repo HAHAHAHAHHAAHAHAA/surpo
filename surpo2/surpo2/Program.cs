@@ -28,6 +28,8 @@ namespace surpo2
                 else if(userInput == "Work")
                 {
                     Work();
+                    i *= 2;
+                    Console.WriteLine(i);
                 }
                 else
                 {
