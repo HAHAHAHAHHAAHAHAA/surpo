@@ -51,6 +51,11 @@ namespace surpo2
 
         }
 
+        public static int Hihih()
+        {
+            return 0;
+        }
+
         public static void SayBye()
         {
             Console.WriteLine("Bye!!! -_-");
