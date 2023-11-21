@@ -6,27 +6,31 @@ namespace surpo2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите Hi или Bye:");
-            string userInput = Console.ReadLine();
-            int i = 100;
+            while (true) 
+            {
+                Console.WriteLine("Введите Hi или Bye:");
+                string userInput = Console.ReadLine();
+                int i = 100;
 
-            if(userInput == "Bye")
-            {
-                SayBye();
-                i++;
-                Console.WriteLine(i);
-            }
-            else if(userInput == "Hi")
-            {
-                SayHi();
-                i--;
-                Console.WriteLine(i);
+                if (userInput == "Bye")
+                {
+                    SayBye();
+                    i++;
+                    Console.WriteLine(i);
+                }
+                else if (userInput == "Hi")
+                {
+                    SayHi();
+                    i--;
+                    Console.WriteLine(i);
 
+                }
+                else
+                {
+                    Work();
+                }
             }
-            else
-            {
-                Work();
-            }
+            
 
         }
 
