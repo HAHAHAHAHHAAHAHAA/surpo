@@ -38,7 +38,7 @@ namespace surpo2
 
                 if(i == 200)
                 {
-                    Sleep();
+                    Sleep(i);
                 }
             }
             
@@ -61,9 +61,9 @@ namespace surpo2
             Console.WriteLine("I'm working >_<");
         }
 
-        public static void Sleep()
+        public static void Sleep(int i)
         {
-            Console.WriteLine("Going to sleep");
+            Console.WriteLine($"Going to sleep for {i} minutes");
         }
 
     }
