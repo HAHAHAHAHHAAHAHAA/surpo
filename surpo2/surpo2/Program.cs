@@ -6,7 +6,10 @@ namespace surpo2
     {
         static void Main(string[] args)
         {
-            while (true) 
+            Console.WriteLine("Чтобы начать введите S");
+            string stop = Console.ReadLine();
+
+            while (stop != "N") 
             {
                 Console.WriteLine("Введите Hi или Bye или Work:");
                 string userInput = Console.ReadLine();
@@ -40,6 +43,9 @@ namespace surpo2
                 {
                     Sleep(i);
                 }
+
+                Console.WriteLine("Продолжить Y/N?");
+                stop = Console.ReadLine();
             }
             
 
