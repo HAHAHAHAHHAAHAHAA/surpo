@@ -36,7 +36,7 @@ namespace surpo2
                     Console.WriteLine("Введите одну из предложенных фраз.");
                 }
 
-                if(i == 200)
+                if(i > 50)
                 {
                     Sleep(i);
                 }
