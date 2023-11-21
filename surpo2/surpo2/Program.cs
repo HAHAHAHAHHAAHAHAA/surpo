@@ -8,7 +8,6 @@ namespace surpo2
         {
             while (true) 
             {
-               
                 Console.WriteLine("Введите Hi или Bye или Work:");
                 string userInput = Console.ReadLine();
                 int i = 100;
@@ -29,6 +28,10 @@ namespace surpo2
                 else if(userInput == "Work")
                 {
                     Work();
+                }
+                else
+                {
+                    Console.WriteLine("Введите одну из предложенных фраз.");
                 }
             }
             
