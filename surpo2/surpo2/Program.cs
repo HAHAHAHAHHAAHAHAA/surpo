@@ -6,25 +6,55 @@ namespace surpo2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите Hi или Bye:");
-            string userInput = Console.ReadLine();
-            int i = 100;
+            Console.WriteLine("Чтобы начать введите S");
+            string stop = Console.ReadLine();
 
-            Console.WriteLine(userInput);
-
-            if(userInput == "Bye")
+            while (stop != "N") 
             {
-                SayBye();
-                i++;
-                Console.WriteLine(i);
-            }
-            else if(userInput == "Hi")
-            {
-                SayHi();
-                i--;
-                Console.WriteLine(i);
+                Console.WriteLine("Введите Hi или Bye или Work:");
+                string userInput = Console.ReadLine();
+                int i = 100;
+                
+                if (userInput == "Bye")
+                {
+                    SayBye();
+                    i++;
+                    Console.WriteLine(i);
+                }
+                else if (userInput == "Hi")
+                {
+                    SayHi();
+                    i--;
+                    Console.WriteLine(i);
 
+                }
+                else if(userInput == "Work")
+                {
+                    Work();
+                    i *= 2;
+                    Console.WriteLine(i);
+                }
+                else
+                {
+                    Console.WriteLine("Введите одну из предложенных фраз.");
+                }
+
+                if(i > 50)
+                {
+                    Sleep(i);
+                }
+
+                Console.WriteLine("Продолжить Y/N?");
+                stop = Console.ReadLine();
             }
+
+            Console.WriteLine("oh no... please don't pull me");  
+
+        }
+
+        public static int Hihih()
+        {
+            return 0;
         }
 
         public static int Hihih()
@@ -42,5 +72,16 @@ namespace surpo2
         {
             Console.WriteLine("Hi!!! ^_^");
         }
+
+        public static void Work()
+        {
+            Console.WriteLine("I'm working >_<");
+        }
+
+        public static void Sleep(int i)
+        {
+            Console.WriteLine($"Going to sleep for {i} minutes");
+        }
+
     }
 }
