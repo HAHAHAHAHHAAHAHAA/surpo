@@ -47,7 +47,8 @@ namespace surpo2
                 Console.WriteLine("Продолжить Y/N?");
                 stop = Console.ReadLine();
             }
-            
+
+            Console.WriteLine("oh no... please don't pull me");  
 
         }
 
